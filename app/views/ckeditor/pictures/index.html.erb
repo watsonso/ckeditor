@@ -6,7 +6,7 @@
   </div>
 
   <div class="fileupload-list" data-endless="true">
-    <%= render partial: 'ckeditor/shared/asset', collection: @pictures.scoped %>
+    <%= render partial: 'ckeditor/shared/asset', collection: @pictures %>
   </div>
 
   <% unless @pictures.last_page? %>
