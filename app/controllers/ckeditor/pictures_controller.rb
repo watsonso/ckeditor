@@ -6,7 +6,7 @@ class Ckeditor::PicturesController < Ckeditor::ApplicationController
     @pictures = Ckeditor::Paginatable.new(@pictures).page(params[:page])
 
     respond_to do |format|
-      format.html { render layout: @pictures.first_page? }
+      format.html { render layout: true }
     end
   end
 
